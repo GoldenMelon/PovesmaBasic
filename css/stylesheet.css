@@ -117,6 +117,55 @@ div.tableCell, section.tableCell {
 
 /* header */
 
+.positionAbsolute {
+    border-spacing: 4px;
+    float: right;
+    position: relative;
+    left: -321px;
+    top: 37px;
+    /*  background-color: #FF9900; */
+    width: 46px;
+    height: 46px;
+    transition: 1s ease-in-out;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+#topLeftHeader:hover .positionAbsolute{
+    -webkit-transform: rotate(405deg);
+    -moz-transform: rotate(405deg);
+    -ms-transform: rotate(405deg);
+    -o-transform: rotate(405deg);
+    transform: rotate(405deg);
+    /*animation: slide 1s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;*/
+}
+
+.asdasd {
+    width: 17px;
+    height: 17px;
+    background-color: #7AC142;
+}
+@keyframes slide {
+    0% {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    100% {
+        -webkit-transform: rotate(405deg);
+        -moz-transform: rotate(405deg);
+        -ms-transform: rotate(405deg);
+        -o-transform: rotate(405deg);
+        transform: rotate(405deg);
+    }
+}
+
 .headerhr {
     clear: both;
     border-bottom: solid #7AC142 7px;
@@ -148,6 +197,10 @@ header #topLeftHeader #logo {
 .link_underline {
     color: #818282;
     text-decoration: underline;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
 }
 
 .green_back {
