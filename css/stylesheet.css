@@ -130,7 +130,8 @@ header #topLeftHeader {
     float: left;
 }
 header #topLeftHeader #logo {
-    margin: 10px 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     height: 100px;
 }
 
@@ -177,6 +178,12 @@ footer {
 
 #rightFooter {
     float: right;
+    margin-top: 10px;
+    font-size: small;
+    color: #818282;
+}
+
+.footerFont {
     margin-top: 10px;
     font-size: small;
     color: #818282;
