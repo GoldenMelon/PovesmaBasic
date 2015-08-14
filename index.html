@@ -6,19 +6,50 @@
     <link rel="icon" href="images/favicon.png">
     <link rel="stylesheet" href="css/stylesheet.css">
     <script src="js/povesma.js"></script>
+    <style type="text/css">
+        .positionAbsolute {
+            border-spacing: 3px;
+            float: right;
+            position: relative;
+            left: -318px;
+            top: 40px;
+            width: 40px;
+            height: 40px;
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+
+        .asdasd {
+            background-color: antiquewhite;
+        }
+    </style>
 </head>
 <body>
 <header>
     <div class="container">
         <div id="topLeftHeader">
-            <a href="index.html" title="На главную"><img id="logo" src="images/LOGO.png" alt="Логотип"></a>
+            <a href="index.html" title="На главную">
+                <div class="positionAbsolute newTable">
+                    <div class="tableRow">
+                        <div class="tableCell asdasd"></div>
+                        <div class="tableCell asdasd"></div>
+                    </div>
+                    <div class="tableRow">
+                        <div class="tableCell asdasd"></div>
+                        <div class="tableCell asdasd"></div>
+                    </div>
+                </div>
+                <img id="logo" src="images/logosmall.png" alt="Логотип"></a>
         </div>
         <div id="top_right_header">
             +7(495)<span class="greenHeading">760-36-33</span><br>
             <a class="link_underline" href="mailto:info@povesma.ru?subject=Вопросы">info@povesma.ru</a>
         </div>
     </div>
-    <div class="tophr"></div>
+    <div class="headerhr"></div>
 </header>
 <div class="main">
     <div class="container fullHeight">
@@ -43,12 +74,15 @@
     </div>
 </div>
 <footer>
-    <div class="bothr">
+    <div class="footerhr">
     </div>
-    <div class="container xCenter">
-        <span class="footerFont">
-            Created by Dmitry Volkov 2015 Povesma &copy;
-        </span>
+    <div class="container">
+        <div id="leftFooter">
+            Created by Dmitry Volkov
+        </div>
+        <div id="rightFooter">
+            2015 &copy; Povesma LLC
+        </div>
     </div>
 </footer>
 </body>

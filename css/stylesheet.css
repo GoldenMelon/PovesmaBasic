@@ -117,7 +117,7 @@ div.tableCell, section.tableCell {
 
 /* header */
 
-.tophr {
+.headerhr {
     clear: both;
     border-bottom: solid #7AC142 7px;
 }
@@ -166,31 +166,24 @@ header #top_right_header {
 /* footer */
 
 footer {
+    font-size: small;
+    color: #818282;
     height: 30px;
+    text-align: center;
 }
 
-#leftFotter {
-    float: left;
-    margin-top: 10px;
-    font-size: small;
-    color: #818282;
-}
 
-#rightFooter {
-    float: right;
-    margin-top: 10px;
-    font-size: small;
-    color: #818282;
-}
-
-.footerFont {
-    margin-top: 10px;
-    font-size: small;
-    color: #818282;
-}
-
-.bothr {
+.footerhr {
     border-bottom: solid #7AC142 7px;
+}
+
+#leftFooter{
+    margin-top: 5px;
+    float: left;
+}
+#rightFooter{
+    margin-top: 5px;
+    float: right;
 }
 
 /* nav */
