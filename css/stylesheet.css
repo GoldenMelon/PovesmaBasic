@@ -1,11 +1,14 @@
 /* universal */
 
 /* a */
+a {
+    color: white;
+}
 
-a:link,a:visited {
+#top_right_header a:link,#top_right_header a:visited {
     color: #818282;
 }
-a:hover, a:active {
+#top_right_header a:hover, #top_right_header a:active {
     color: #F90;
 }
 
