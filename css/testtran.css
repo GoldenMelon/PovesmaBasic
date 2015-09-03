@@ -1,0 +1,83 @@
+.hexagon {
+    position: relative;
+    width: 300px;
+    height: 173.21px;
+    margin: 86.60px 0;
+    background-image: url(https://0.s3.envato.com/files/53859088/Green-Leaf-Texture_01-1_Preview.jpg);
+    background-size: auto 346.4102px;
+    background-position: center;
+    cursor: pointr;
+
+}
+.hexTop,
+.hexBottom {
+    position: absolute;
+    z-index: 1;
+    width: 212.13px;
+    height: 212.13px;
+    background-color: #818282;
+    overflow: hidden;
+    -webkit-transform: scaleY(0.5774) rotate(-45deg);
+    -ms-transform: scaleY(0.5774) rotate(-45deg);
+    transform: scaleY(0.5774) rotate(-45deg);
+
+    left: 43.93px;
+}
+/*counter transform the bg image on the caps*/
+
+.hexTop:after,
+.hexBottom:after {
+    content: "";
+    position: absolute;
+    width: 300.0000px;
+    height: 173.20508075688775px;
+    -webkit-transform: rotate(45deg) scaleY(1.7321) translateY(-86.6025px);
+    -ms-transform: rotate(45deg) scaleY(1.7321) translateY(-86.6025px);
+    transform: rotate(45deg) scaleY(1.7321) translateY(-86.6025px);
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    background-color: #FF9900;
+}
+.hexTop {
+    top: -106.0660px;
+}
+.hexTop:after {
+    background-position: center top;
+}
+.hexBottom {
+    bottom: -106.0660px;
+}
+.hexBottom:after {
+    background-position: center bottom;
+}
+.hexagon:after {
+    content: "";
+    position: absolute;
+    top: 0.0000px;
+    left: 0;
+    width: 300.0000px;
+    height: 173.2051px;
+    z-index: 2;
+    background: inherit;
+}
+.text {
+    position: absolute;
+    top: 220px;
+    left: 80px;
+    right: 0;
+    bottom: 0;
+    font-size: 2.6em;
+    color: #000;
+    z-index: 999;
+    opacity: 1;
+    transition: all ease 0.6s;
+}
+.hexagon:hover .text {
+
+    opacity: 1;
+    top: 70px;
+}
+.hexagon:hover {
+    background-color: #fff;
+}

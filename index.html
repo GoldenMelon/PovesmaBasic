@@ -5,67 +5,38 @@
     <title>Строительная компания &quot;Повесма&quot;</title>
     <link rel="icon" href="images/favicon.png">
     <link rel="stylesheet" href="css/stylesheet.css">
-    <script src="js/povesma.js"></script>
+    <script src="js/preload.js"></script>
 </head>
 <body>
 <header>
     <div class="container">
-        <div id="topLeftHeader">
-            <a href="index.html">
-                <div class="topLeftRhomb newTable">
-                    <div class="tableRow">
-                        <div class="tableCell asdasd"></div>
-                        <div class="tableCell asdasd"></div>
-                    </div>
-                    <div class="tableRow">
-                        <div class="tableCell asdasd"></div>
-                        <div class="tableCell asdasd"></div>
-                    </div>
-                </div>
-                <img id="logo" src="images/LOGOworhombs.png" alt="Логотип"></a>
-        </div>
-        <div id="top_right_header">
-            +7(495)<span class="greenHeading">760-36-33</span><br>
-            <a class="link_underline" href="mailto:info@povesma.ru?subject=Вопросы">info@povesma.ru</a>
-        </div>
-    </div>
-    <div class="headerhr"></div>
-</header>
-
-<div class="main">
-    <div class="container fullHeight">
-        <div class="newTable fullParentSize">
-            <div class="tableRow">
-                <div class="tableCell yCenter">
-                    <div id="mainbox" class="xCenter">
-                        <div id="commonbox">
-                            <div class="tableRow">
-                                <div id="top" class="box" style="cursor: pointer;" onclick="channel_click(top)"><div class="newclass"><a href="about.html">О КОМПАНИИ</a></div></div>
-                                <div id="right" class="box" style="cursor: pointer;" onclick="channel_click(right)"><div class="newclass"><a href="about.html">ПРОЕКТЫ</a></div></div>
-                            </div>
-                            <div class="tableRow">
-                                <div id="left" class="box" style="cursor: pointer;" onclick="channel_click(left)"><div class="newclass"><a href="about.html">ДОКУМЕНТЫ</a></div></div></a>
-                                <div id="bottom" class="box" style="cursor: pointer;" onclick="channel_click(bottom)"><div class="newclass"><a href="about.html">КОНТАКТЫ</a></div></div>
-                            </div>
-                        </div>
-                    </div>
+        <a href="index.html">
+            <div id="logo">
+                <div id="animated-box">
+                    <div class="box-child"></div>
+                    <div class="box-child"></div>
+                    <div class="box-child"></div>
+                    <div class="box-child"></div>
                 </div>
             </div>
+        </a>
+        <div id="contact">
+            +7(495)<span class="greenHeading">760-36-33</span><br>
+            <a href="mailto:info@povesma.ru?subject=Вопросы">info@povesma.ru</a>
         </div>
+    </div>
+</header>
+
+<div class="container remaining-space">
+    <div class="main-wrap">
+        <nav>
+            <a href="about.html"><div class="box"><span>О КОМПАНИИ</span></div></a>
+            <a href="projects.html"><div class="box"><span>ПРОЕКТЫ</span></div></a>
+            <a href="documents.html"><div class="box"><span>ДОКУМЕНТЫ</span></div></a>
+            <a href="contact.html"><div class="box"><span>КОНТАКТЫ</span></div></a>
+        </nav>
     </div>
 </div>
 
-<footer>
-    <div class="footerhr">
-    </div>
-    <div class="container">
-        <div id="leftFooter">
-            Created by Dmitry Volkov
-        </div>
-        <div id="rightFooter">
-            2015 &copy; Povesma LLC
-        </div>
-    </div>
-</footer>
 </body>
 </html>

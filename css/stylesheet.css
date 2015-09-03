@@ -1,15 +1,43 @@
 /* universal */
 
-/* a */
-a {
-    color: white;
+a:link {
+    text-decoration: none;
 }
 
-#top_right_header a:link,#top_right_header a:visited {
-    color: #818282;
+a:visited {
+    text-decoration: none;
 }
-#top_right_header a:hover, #top_right_header a:active {
-    color: #F90;
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+.full-height {
+    height: 100%;
+}
+
+div.parent-height {
+    height: inherit;
+}
+
+div.parent-width {
+    width: inherit;
+}
+
+div.parent-size {
+    width: inherit;
+    height: inherit;
+}
+
+div.remaining-space {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: space-around;
+    align-items: center;
 }
 
 /* container */
@@ -38,269 +66,110 @@ a {
     }
 }
 
-/* custom classes */
-
-.fullHeight {
-    height: 100%;
-}
-
-div.fullParentSize {
-    width: inherit;
-    height: inherit;
-}
-
-div.yCenter {
-    vertical-align: middle;
-}
-
-div.yTop {
-    vertical-align: top;
-}
-
-div.xCenter {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-div.xRight {
-    float: right;
-}
-div.xLeft {
-    float: left;
-}
-
-hr {
-    height: 10px;
-}
-
 /* main element and classes rules */
 
 html, body {
     height: 100%;
     width: 100%;
     margin: 0;
-    padding: 0;
 }
-
 body {
     background: url("../images/shutterstock_70010998_720.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    display: table;
     font-family: Verdana, Geneva, sans-serif;
-}
-
-header, .main, footer {
-    display: table-row;
-    width: 100%;
+    font-size: medium;
+    display: flex;
+    flex-flow: column;
 }
 
 .main {
-    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: #FF9900;
+}
+
+.main-wrap {
+    padding: 68px;
+    width: 325px;
+    height: 325px;
+    background-color: #FF9900;
+}
+.main-wrap nav {
+
+}
+.main-wrap section {
 }
 
 
 section {
-    margin-left: 15px;
-    padding: 15px;
+    margin: 10px;
+    padding: 0px 15px;
     border-radius: 10px;
     border: solid 5px #7AC142;
     background-color: rgba(255,255,255,0.9);
 }
 @media (max-width: 991px) {
     section {
-        margin: 0px;
-        padding: 15px;
         border-radius: 0px;
         border: solid 5px #7AC142;
         background-color: rgba(255,255,255,0.9);
     }
 }
 
-/* Tables */
+/* Navigation */
 
-div.newTable {
-    display: table;
-}
-div.tableRow {
-    display: table-row;
-}
-div.tableCell, section.tableCell {
-    display: table-cell;
-}
-
-div.newTablePages {
-    display: inline;
-}
-div.tableRowPages {
-    display: table-row;
-}
-#commonboxPages .tableRowPages {
-
-}
-div.tableCellPages {
-    width: inherit;
+div.box span {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    color: white;
 }
 
-section.tableCellPages {
-    display: inline;
-    vertical-align: middle;
-}
-@media (min-width: 992px) {
-    div.tableCellPages {
-        display: table-cell;
-        vertical-align: middle;
-    }
-    section.tableCellPages {
-        display: table-cell;
-        vertical-align: middle;
-    }
-    div.tableRowPages {
-        display: table-row;
-    }
-    div.newTablePages {
-        width: inherit;
-        height: inherit;
-        display: table;
-    }
-    #commonboxPages .tableRowPages {
-        display: table-row
-    }
+div.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: rgba(122, 193, 66, 0.5);
+    color: white;
+
+    width: 150px;
+    height: 150px;
+
+    border: 5px solid white;
+
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
 }
 
-/* header */
+div.box:hover{
+    background-color: #7AC142;
+}
 
-.topLeftRhomb {
-    border-spacing: 4px;
-    float: right;
-    position: relative;
-    left: -321px;
-    top: 37px;
-    /*  background-color: #FF9900; */
-    width: 46px;
-    height: 46px;
-    transition: 1s ease-in-out;
+nav {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
-}
-#topLeftHeader:hover .topLeftRhomb {
-    -webkit-transform: rotate(405deg);
-    -moz-transform: rotate(405deg);
-    -ms-transform: rotate(405deg);
-    -o-transform: rotate(405deg);
-    transform: rotate(405deg);
-    /*animation: slide 1s ease-in-out;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;*/
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    width: 325px;
+    height: 325px;
 }
 
-.asdasd {
-    width: 17px;
-    height: 17px;
-    background-color: #7AC142;
-}
-@keyframes slide {
-    0% {
-        -webkit-transform: rotate(45deg);
-        -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        -o-transform: rotate(45deg);
-        transform: rotate(45deg);
-    }
-    100% {
-        -webkit-transform: rotate(405deg);
-        -moz-transform: rotate(405deg);
-        -ms-transform: rotate(405deg);
-        -o-transform: rotate(405deg);
-        transform: rotate(405deg);
-    }
-}
-
-.headerhr {
-    clear: both;
-    border-bottom: solid #7AC142 7px;
-}
-
-header {
-    background-color: white;
-    height: 120px;
-}
-
-header #topLeftHeader {
-    float: left;
-}
-header #topLeftHeader #logo {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    height: 100px;
-}
-
-.greenHeading {
-    color: #7AC142;
-}
-
-.xxLarge {
-    font-size: xx-large;
-}
-.xLarge {
-    font-size: large;
-}
-.link_underline {
-    color: #818282;
-    text-decoration: underline;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s;
-}
-
-.green_back {
-    background-color: #7AC142;
-}
-
-header #top_right_header {
-    color: #818282;
-    font-size: xx-large;
-    float: right;
-    font-weight: bold;
-    text-align: right;
-    margin-top: 20px;
-}
-
-/* footer */
-
-footer {
-    background-color: white;
-    font-size: small;
-    color: #818282;
-    height: 30px;
-    text-align: center;
-}
-
-
-.footerhr {
-    border-bottom: solid #7AC142 7px;
-}
-
-#leftFooter{
-    margin-top: 5px;
-    float: left;
-}
-#rightFooter{
-    margin-top: 5px;
-    float: right;
-}
-
-/* nav */
-div#mainbox {
-    width: 503px;
-    height: 503px;
-}
 @media (max-width: 991px) {
     div#mainboxPages {
         margin: 5px 0px;
@@ -314,23 +183,6 @@ div#mainbox {
         width: 503px;
         height: 503px;
     }
-}
-
-div#commonbox {
-    position: relative;
-    left: 74px;
-    top: 74px;
-    display: table;
-    border-spacing: 5px;
-    margin: 0;
-    padding: 0;
-    width: 355px;
-    height: 355px;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
 }
 
 div#commonboxPages {
@@ -359,18 +211,6 @@ div#commonboxPages {
     }
 }
 
-div.box {
-    display: table-cell;
-    overflow: hidden;
-    color: white;
-    width: 150px;
-    margin: 0;
-    padding: 0;
-    height: 150px;
-    background-color: rgba(122, 193, 66, 0.5);
-    border: solid white 5px;
-}
-
 
 div.boxPages {
     display: table-cell;
@@ -392,19 +232,6 @@ div.boxPages {
         border: solid white 5px;
     }
 }
-
-div.newclass {
-    display: inherit ;
-    width: inherit;
-    height: inherit;
-    vertical-align: middle;
-    text-align: center;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-}
 div.newclassPages{
     display: table-cell;
     width: inherit;
@@ -425,44 +252,85 @@ div.newclassPages{
         transform: rotate(-45deg);
     }
 }
-#left, #right, #top, #bottom {
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
+
+/* header */
+
+header {
+    background-color: white;
+    flex: 0 1 120px;
 }
-#left:hover {
-    -webkit-transform: translate(-10px, 10px);
-    -moz-transform: translate(-10px, 10px);
-    -ms-transform: translate(-10px, 10px);
-    -o-transform: translate(-10px, 10px);
-    transform: translate(-10px, 10px);
+
+header #logo {
+    background-image: url(../images/logosmallworhombs.png);
+    width: 385px;
+    height: 100px;
+}
+
+header #logo:hover > #animated-box {
+    -webkit-transform: rotate(405deg);
+    -moz-transform: rotate(405deg);
+    -ms-transform: rotate(405deg);
+    -o-transform: rotate(405deg);
+    transform: rotate(405deg);
+}
+
+header div.container {
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#contact a:link,
+#contact a:visited {
+    color: #818282;
+    text-decoration: underline;
+}
+
+#contact a:hover,
+#contact a:active {
+    color: #F90;
+    text-decoration: underline;
+}
+
+#animated-box {
+    position: relative;
+    top: 29px;
+    left: 66px;
+
+    width: 43px;
+    height: 43px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    -ms-transition: all 2s;
+    -o-transition: all 2s;
+    transition: all 2s;
+}
+
+.box-child {
+    width: 19px;
+    height: 19px;
     background-color: #7AC142;
 }
 
-#right:hover {
-    -webkit-transform: translate(10px, -10px);
-    -moz-transform: translate(10px, -10px);
-    -ms-transform: translate(10px, -10px);
-    -o-transform: translate(10px, -10px);
-    transform: translate(10px, -10px);
-    background-color: #7AC142;
-}
-#top:hover {
-    -webkit-transform: translate(-10px, -10px);
-    -moz-transform: translate(-10px, -10px);
-    -ms-transform: translate(-10px, -10px);
-    -o-transform: translate(-10px, -10px);
-    transform: translate(-10px, -10px);
-    background-color: #7AC142;
+header div.container #contact {
+    color: #818282;
+    font-size: xx-large;
+    float: right;
+    font-weight: bold;
+    text-align: right;
 }
 
-#bottom:hover {
-    -webkit-transform: translate(10px, 10px);
-    -moz-transform: translate(10px, 10px);
-    -ms-transform: translate(10px, 10px);
-    -o-transform: translate(10px, 10px);
-    transform: translate(10px, 10px);
-    background-color: #7AC142;
+.green-heading {
+    color: #7AC142;
 }
-
